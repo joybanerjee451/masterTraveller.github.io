@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Booking Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Domine&family=Poppins:wght@300;400;500;600;700&family=Slabo+27px&display=swap"
+		rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#footid">About</a></li>
+				<li><a href="#featured">Travel Options</a></li>
+				<li><a href="#updates">Make a Booking</a></li>
+				<li><a href="#managebookings">Manage Booking</a></li>
+				<!-- <img src="carticon.png" alt="This is an image" width="35px" height="35px"> -->
+			</ul>
+		</nav>
+	</header>
+
+	<section id="banner">
+		<h1>Welcome to masterTraveller</h1>
+		<p><small> Book tickets for buses, trains and flights at one go</small></p>
+		<h2 style="color: #9595cb;">Search for Destinations</h2>
+		<form id="search-form">
+			<input type="text" id="destination-input" placeholder="Enter your location">
+			<input type="text" id="destination-input" placeholder="Enter your destination">
+			<a href="#" class="btn">Search &#8594;</a>
+		</form>
+	</section>
+
+	<section id="featured">
+		<h2 class="title">Available Travel Options</h2>
+		<div class="content">
+			<div class="item">
+				<img src="bus.jpg">
+				<h3>Buses</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit sapien non lectus laoreet
+					lobortis.</p>
+				<a class="btn" href="#">Book Now &#8594;</a>
+			</div>
+			<div class="item">
+				<img src="train.jpg">
+				<h3>Trains</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit sapien non lectus laoreet
+					lobortis.</p>
+				<a class="btn" href="#">Book Now &#8594;</a>
+			</div>
+			<div class="item">
+				<img src="flight.jpg">
+				<h3>Flights</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit sapien non lectus laoreet
+					lobortis.</p>
+				<a class="btn" href="#">Book Now &#8594;</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="updates">
+		<h2 class="title">Make a Booking</h2>
+		<!-- <form id="booking-form">
+			<input type="text" id="name-input" placeholder="Your name">
+			<br>
+			<input type="phone" id="phone" placeholder="Your Phone no.">
+			<input type="email" id="email-input" placeholder="Your email">
+			<a class="btn" href="#">Book Now &#8594;</a>
+		  </form> -->
+		  <form id="booking-form">
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="name"><b><i> Name:</i></b></label>
+			  <input class="in" type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="email"><b><i>Email:</i></b></label>
+			  <input class="in" type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="phone"><b><i>Phone:</i></b></label>
+			  <input class="in" type="phone" id="phone" name="phone" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="location"><b><i>From:</i></b></label>
+			  <input class="in" type="text" id="location" name="phone" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="destination"><b><i>To:</i></b></label>
+			  <input class="in" type="text" id="destination" name="phone" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="date"><b><i>Date:</i></b></label>
+			  <input class="in" type="date" id="date" name="date" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="time"><b><i>Time:</i></b></label>
+			  <input class="in" type="time" id="time" name="time" required>
+			</div>
+			<div class="form-group">
+			  <label style="color:#74b1bb" for="guests"><b><i>No. of Travellers:</i></b></label>
+			  <input class="in in1" type="number" id="guests" name="guests" min="1" max="10" required>
+			</div>
+			<button type="submit">Submit</button>
+		  </form>
+	</section>
+
+	<div class="events" id="managebookings">
+		<h2 class="title">Manage Bookings</h2>
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<ul>
+						<li>
+							<h3>Bus Bookings</h3>
+							<p><b> Date:</b> &nbsp; June 1, 2023</p>
+							<p><b>Bus Name: </b> &nbsp; SBSTC Karunamoyee-Barakar via Durgapur</p>
+							<p><b> Location:</b> &nbsp; Sarat Colony, Birati</p>
+							<p><b> Destination:</b> &nbsp; Chowringhee more</p>
+							<a class="btn" href="#">Learn More&#8594; </a>
+						</li>
+					</ul>
+					<img src="update1.jpg" alt="">
+
+				</div>
+				<div class="col-3">
+					<ul>
+						<li>
+							<h3>Train Bookings</h3>
+							<p><b>Date:</b> &nbsp; June 15, 2023</p>
+							<p><b>Train Name: </b> &nbsp; Mayurakshi Express</p>
+							<p><b>Location:</b> &nbsp; Howrah</p>
+							<p><b>Destination:</b> &nbsp; Durgapur</p>
+							<a class="btn" href="#">Learn More &#8594;</a>
+						</li>
+					</ul>
+					<img src="update2.jpg" alt="">
+
+				</div>
+				<div class="col-3">
+					<ul>
+						<li>
+							<h3>Flight Bookings</h3>
+							<p><b>Date:</b> &nbsp; June 30, 2023</p>
+							<p><b>Flight Name: </b> &nbsp; Indigo(Durgapur to Bangalore via Hyderabad)</p>
+							<p><b>Location:</b> &nbsp; Andal</p>
+							<p><b>Destination:</b> &nbsp; Bangalore</p>
+							<a class="btn" href="#">Learn More &#8594;</a>
+						</li>
+					</ul>
+					<img src="update3.jpg" alt="">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="testimonial">
+		<h2 class="title">Traveller's Reviews</h2>
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quod adipisci beatae
+						nulla assumenda id, placeat sunt, delectus repudiandae alias sed voluptatem deleniti dolorem
+						magnam suscipit et sit inventore blanditiis.</p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-alt"></i>
+					</div>
+					<img src="person1.jpg" alt="">
+					<h3>Sean Parker</h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quod adipisci beatae
+						nulla assumenda id, placeat sunt, delectus repudiandae alias sed voluptatem deleniti dolorem
+						magnam suscipit et sit inventore blanditiis.</p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<!-- <i class="fa fa-star-half-alt"></i> -->
+					</div>
+					<img src="person2.jpg" alt="">
+					<h3>Julie Smith</h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quod adipisci beatae
+						nulla assumenda id, placeat sunt, delectus repudiandae alias sed voluptatem deleniti dolorem
+						magnam suscipit et sit inventore blanditiis.</p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<!-- <i class="fa fa-star"></i> -->
+						<i class="fa fa-star-half-alt"></i>
+					</div>
+					<img src="person3.jpg" alt="">
+					<h3>Steve Christian</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer" style="padding-left: 30px;" id="footid">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and iOS mobile phones</p>
+					<div class="app-logo">
+						<img src="play-store.png" alt="">
+						<img src="app-store.png" alt="">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="logo.PNG" alt="" width="20px">
+					<p>masterTraveller - "Just Travel!"</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>About</li>
+						<li>Destinations</li>
+						<li>Travel Options</li>
+						<li>Make a Booking</li>
+						<li>Manage Booking</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright &copy; 2023 - masterTraveller.com | All rights reserved. </p>
+		</div>
+	</div>
+</body>
+
+</html>
